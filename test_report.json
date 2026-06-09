@@ -1,0 +1,1 @@
+{"command":"python -m unittest discover -s tests","returncode":0,"status":"pass","stderr":".......................\n----------------------------------------------------------------------\nRan 23 tests in 0.386s\n\nOK\n","stdout":""}

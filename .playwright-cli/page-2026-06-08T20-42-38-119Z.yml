@@ -1,0 +1,167 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "Recursos" [level=1] [ref=e4]
+      - paragraph [ref=e5]: PROYECTO_CUATRO
+    - button "Nuevo recurso" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - region "Resumen" [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Total
+        - strong [ref=e11]: "4"
+      - generic [ref=e12]:
+        - generic [ref=e13]: Activos
+        - strong [ref=e14]: "3"
+      - generic [ref=e15]:
+        - generic [ref=e16]: Mantencion
+        - strong [ref=e17]: "1"
+      - generic [ref=e18]:
+        - generic [ref=e19]: Inactivos
+        - strong [ref=e20]: "0"
+    - generic [ref=e21]:
+      - complementary "Formulario de recurso" [ref=e22]:
+        - generic [ref=e23]:
+          - heading "Nuevo recurso" [level=2] [ref=e24]
+          - button "x" [ref=e25] [cursor=pointer]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - text: Codigo
+            - textbox "Codigo" [ref=e28]:
+              - /placeholder: EQ-001
+          - generic [ref=e29]:
+            - text: Nombre
+            - textbox "Nombre" [ref=e30]:
+              - /placeholder: Compresor principal
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - text: Tipo
+              - combobox "Tipo" [ref=e33]:
+                - option "Material" [selected]
+                - option "Equipo"
+                - option "Herramienta"
+                - option "Vehiculo"
+                - option "Espacio"
+                - option "Servicio"
+            - generic [ref=e34]:
+              - text: Estado
+              - combobox "Estado" [ref=e35]:
+                - option "Activo" [selected]
+                - option "Mantencion"
+                - option "Inactivo"
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - text: Responsable
+              - textbox "Responsable" [ref=e38]:
+                - /placeholder: Produccion
+            - generic [ref=e39]:
+              - text: Cantidad
+              - spinbutton "Cantidad" [ref=e40]: "1"
+          - generic [ref=e41]:
+            - text: Ubicacion
+            - textbox "Ubicacion" [ref=e42]:
+              - /placeholder: Bodega Norte
+          - generic [ref=e43]:
+            - text: Notas
+            - textbox "Notas" [ref=e44]:
+              - /placeholder: Condiciones, uso o detalle operativo
+          - alert [ref=e45]
+          - button "Guardar recurso" [active] [ref=e46] [cursor=pointer]
+      - region "Listado de recursos" [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - text: Buscar
+            - textbox "Buscar" [ref=e50]:
+              - /placeholder: Codigo, nombre, responsable o ubicacion
+          - generic [ref=e51]:
+            - text: Tipo
+            - combobox "Tipo" [ref=e52]:
+              - option "Todos" [selected]
+              - option "Material"
+              - option "Equipo"
+              - option "Herramienta"
+              - option "Vehiculo"
+              - option "Espacio"
+              - option "Servicio"
+          - generic [ref=e53]:
+            - text: Estado
+            - combobox "Estado" [ref=e54]:
+              - option "Todos" [selected]
+              - option "Activo"
+              - option "Mantencion"
+              - option "Inactivo"
+        - table [ref=e56]:
+          - rowgroup [ref=e57]:
+            - row "Codigo Recurso Tipo Responsable Ubicacion Cantidad Estado Acciones" [ref=e58]:
+              - columnheader "Codigo" [ref=e59]
+              - columnheader "Recurso" [ref=e60]
+              - columnheader "Tipo" [ref=e61]
+              - columnheader "Responsable" [ref=e62]
+              - columnheader "Ubicacion" [ref=e63]
+              - columnheader "Cantidad" [ref=e64]
+              - columnheader "Estado" [ref=e65]
+              - columnheader "Acciones" [ref=e66]
+          - rowgroup [ref=e67]:
+            - row "TOOL-777 Llave dinamometrica QA Recurso creado desde verificacion browser. Material Calidad Laboratorio QA 3 Activo Editar Eliminar" [ref=e116]:
+              - cell "TOOL-777" [ref=e117]
+              - cell "Llave dinamometrica QA Recurso creado desde verificacion browser." [ref=e118]:
+                - generic [ref=e119]:
+                  - strong [ref=e120]: Llave dinamometrica QA
+                  - generic [ref=e121]: Recurso creado desde verificacion browser.
+              - cell "Material" [ref=e122]
+              - cell "Calidad" [ref=e123]
+              - cell "Laboratorio QA" [ref=e124]
+              - cell "3" [ref=e125]
+              - cell "Activo" [ref=e126]:
+                - generic [ref=e127]: Activo
+              - cell "Editar Eliminar" [ref=e128]:
+                - generic [ref=e129]:
+                  - button "Editar" [ref=e130] [cursor=pointer]
+                  - button "Eliminar" [ref=e131] [cursor=pointer]
+            - row "MAT-001 Acero laminado Materia prima critica para produccion. Material Inventario Bodega Norte 420 Activo Editar Eliminar" [ref=e132]:
+              - cell "MAT-001" [ref=e133]
+              - cell "Acero laminado Materia prima critica para produccion." [ref=e134]:
+                - generic [ref=e135]:
+                  - strong [ref=e136]: Acero laminado
+                  - generic [ref=e137]: Materia prima critica para produccion.
+              - cell "Material" [ref=e138]
+              - cell "Inventario" [ref=e139]
+              - cell "Bodega Norte" [ref=e140]
+              - cell "420" [ref=e141]
+              - cell "Activo" [ref=e142]:
+                - generic [ref=e143]: Activo
+              - cell "Editar Eliminar" [ref=e144]:
+                - generic [ref=e145]:
+                  - button "Editar" [ref=e146] [cursor=pointer]
+                  - button "Eliminar" [ref=e147] [cursor=pointer]
+            - row "EQ-010 Prensa hidraulica Revision preventiva programada. Equipo Produccion Linea 2 1 Mantencion Editar Eliminar" [ref=e148]:
+              - cell "EQ-010" [ref=e149]
+              - cell "Prensa hidraulica Revision preventiva programada." [ref=e150]:
+                - generic [ref=e151]:
+                  - strong [ref=e152]: Prensa hidraulica
+                  - generic [ref=e153]: Revision preventiva programada.
+              - cell "Equipo" [ref=e154]
+              - cell "Produccion" [ref=e155]
+              - cell "Linea 2" [ref=e156]
+              - cell "1" [ref=e157]
+              - cell "Mantencion" [ref=e158]:
+                - generic [ref=e159]: Mantencion
+              - cell "Editar Eliminar" [ref=e160]:
+                - generic [ref=e161]:
+                  - button "Editar" [ref=e162] [cursor=pointer]
+                  - button "Eliminar" [ref=e163] [cursor=pointer]
+            - row "SRV-LOG Servicio transporte local Contrato mensual. Servicio Compras Proveedor externo 1 Activo Editar Eliminar" [ref=e164]:
+              - cell "SRV-LOG" [ref=e165]
+              - cell "Servicio transporte local Contrato mensual." [ref=e166]:
+                - generic [ref=e167]:
+                  - strong [ref=e168]: Servicio transporte local
+                  - generic [ref=e169]: Contrato mensual.
+              - cell "Servicio" [ref=e170]
+              - cell "Compras" [ref=e171]
+              - cell "Proveedor externo" [ref=e172]
+              - cell "1" [ref=e173]
+              - cell "Activo" [ref=e174]:
+                - generic [ref=e175]: Activo
+              - cell "Editar Eliminar" [ref=e176]:
+                - generic [ref=e177]:
+                  - button "Editar" [ref=e178] [cursor=pointer]
+                  - button "Eliminar" [ref=e179] [cursor=pointer]

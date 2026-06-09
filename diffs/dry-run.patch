@@ -1,0 +1,3 @@
+# dry-run patch
+# Sin cambios de proyecto aplicados.
+# La fabrica local queda implementada en el paquete fabrica/ y los side effects reales siguen bloqueados.

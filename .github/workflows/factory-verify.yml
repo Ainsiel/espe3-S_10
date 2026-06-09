@@ -1,0 +1,18 @@
+name: factory-verify
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python -m unittest discover -s tests
+      - run: python -m fabrica.cli init
+      - run: python -m fabrica.cli run
+      - run: python -m fabrica.cli verify

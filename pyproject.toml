@@ -1,0 +1,11 @@
+[project]
+name = "fabrica-arnes-sdd"
+version = "0.1.0"
+description = "Fabrica agentica ARNES/SDD deterministica sin dependencias externas"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.fabrica]
+policy_version = "policy-arnes-1.0"
+workflow_version = "sdd-extended-1.0"
+deterministic = true

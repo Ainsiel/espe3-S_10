@@ -1,0 +1,151 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "Recursos" [level=1] [ref=e4]
+      - paragraph [ref=e5]: PROYECTO_CUATRO
+    - button "Nuevo recurso" [ref=e6] [cursor=pointer]
+  - main [ref=e7]:
+    - region "Resumen" [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Total
+        - strong [ref=e11]: "3"
+      - generic [ref=e12]:
+        - generic [ref=e13]: Activos
+        - strong [ref=e14]: "2"
+      - generic [ref=e15]:
+        - generic [ref=e16]: Mantencion
+        - strong [ref=e17]: "1"
+      - generic [ref=e18]:
+        - generic [ref=e19]: Inactivos
+        - strong [ref=e20]: "0"
+    - generic [ref=e21]:
+      - complementary "Formulario de recurso" [ref=e22]:
+        - generic [ref=e23]:
+          - heading "Nuevo recurso" [level=2] [ref=e24]
+          - button "x" [ref=e25] [cursor=pointer]
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - text: Codigo
+            - textbox "Codigo" [ref=e28]:
+              - /placeholder: EQ-001
+          - generic [ref=e29]:
+            - text: Nombre
+            - textbox "Nombre" [ref=e30]:
+              - /placeholder: Compresor principal
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - text: Tipo
+              - combobox "Tipo" [ref=e33]:
+                - option "Material" [selected]
+                - option "Equipo"
+                - option "Herramienta"
+                - option "Vehiculo"
+                - option "Espacio"
+                - option "Servicio"
+            - generic [ref=e34]:
+              - text: Estado
+              - combobox "Estado" [ref=e35]:
+                - option "Activo" [selected]
+                - option "Mantencion"
+                - option "Inactivo"
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - text: Responsable
+              - textbox "Responsable" [ref=e38]:
+                - /placeholder: Produccion
+            - generic [ref=e39]:
+              - text: Cantidad
+              - spinbutton "Cantidad" [ref=e40]: "1"
+          - generic [ref=e41]:
+            - text: Ubicacion
+            - textbox "Ubicacion" [ref=e42]:
+              - /placeholder: Bodega Norte
+          - generic [ref=e43]:
+            - text: Notas
+            - textbox "Notas" [ref=e44]:
+              - /placeholder: Condiciones, uso o detalle operativo
+          - alert [ref=e45]
+          - button "Guardar recurso" [ref=e46] [cursor=pointer]
+      - region "Listado de recursos" [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - text: Buscar
+            - textbox "Buscar" [ref=e50]:
+              - /placeholder: Codigo, nombre, responsable o ubicacion
+          - generic [ref=e51]:
+            - text: Tipo
+            - combobox "Tipo" [ref=e52]:
+              - option "Todos" [selected]
+              - option "Material"
+              - option "Equipo"
+              - option "Herramienta"
+              - option "Vehiculo"
+              - option "Espacio"
+              - option "Servicio"
+          - generic [ref=e53]:
+            - text: Estado
+            - combobox "Estado" [ref=e54]:
+              - option "Todos" [selected]
+              - option "Activo"
+              - option "Mantencion"
+              - option "Inactivo"
+        - table [ref=e56]:
+          - rowgroup [ref=e57]:
+            - row "Codigo Recurso Tipo Responsable Ubicacion Cantidad Estado Acciones" [ref=e58]:
+              - columnheader "Codigo" [ref=e59]
+              - columnheader "Recurso" [ref=e60]
+              - columnheader "Tipo" [ref=e61]
+              - columnheader "Responsable" [ref=e62]
+              - columnheader "Ubicacion" [ref=e63]
+              - columnheader "Cantidad" [ref=e64]
+              - columnheader "Estado" [ref=e65]
+              - columnheader "Acciones" [ref=e66]
+          - rowgroup [ref=e67]:
+            - row "MAT-001 Acero laminado Materia prima critica para produccion. Material Inventario Bodega Norte 420 Activo Editar Eliminar" [ref=e68]:
+              - cell "MAT-001" [ref=e69]
+              - cell "Acero laminado Materia prima critica para produccion." [ref=e70]:
+                - generic [ref=e71]:
+                  - strong [ref=e72]: Acero laminado
+                  - generic [ref=e73]: Materia prima critica para produccion.
+              - cell "Material" [ref=e74]
+              - cell "Inventario" [ref=e75]
+              - cell "Bodega Norte" [ref=e76]
+              - cell "420" [ref=e77]
+              - cell "Activo" [ref=e78]:
+                - generic [ref=e79]: Activo
+              - cell "Editar Eliminar" [ref=e80]:
+                - generic [ref=e81]:
+                  - button "Editar" [ref=e82] [cursor=pointer]
+                  - button "Eliminar" [ref=e83] [cursor=pointer]
+            - row "EQ-010 Prensa hidraulica Revision preventiva programada. Equipo Produccion Linea 2 1 Mantencion Editar Eliminar" [ref=e84]:
+              - cell "EQ-010" [ref=e85]
+              - cell "Prensa hidraulica Revision preventiva programada." [ref=e86]:
+                - generic [ref=e87]:
+                  - strong [ref=e88]: Prensa hidraulica
+                  - generic [ref=e89]: Revision preventiva programada.
+              - cell "Equipo" [ref=e90]
+              - cell "Produccion" [ref=e91]
+              - cell "Linea 2" [ref=e92]
+              - cell "1" [ref=e93]
+              - cell "Mantencion" [ref=e94]:
+                - generic [ref=e95]: Mantencion
+              - cell "Editar Eliminar" [ref=e96]:
+                - generic [ref=e97]:
+                  - button "Editar" [ref=e98] [cursor=pointer]
+                  - button "Eliminar" [ref=e99] [cursor=pointer]
+            - row "SRV-LOG Servicio transporte local Contrato mensual. Servicio Compras Proveedor externo 1 Activo Editar Eliminar" [ref=e100]:
+              - cell "SRV-LOG" [ref=e101]
+              - cell "Servicio transporte local Contrato mensual." [ref=e102]:
+                - generic [ref=e103]:
+                  - strong [ref=e104]: Servicio transporte local
+                  - generic [ref=e105]: Contrato mensual.
+              - cell "Servicio" [ref=e106]
+              - cell "Compras" [ref=e107]
+              - cell "Proveedor externo" [ref=e108]
+              - cell "1" [ref=e109]
+              - cell "Activo" [ref=e110]:
+                - generic [ref=e111]: Activo
+              - cell "Editar Eliminar" [ref=e112]:
+                - generic [ref=e113]:
+                  - button "Editar" [ref=e114] [cursor=pointer]
+                  - button "Eliminar" [ref=e115] [cursor=pointer]

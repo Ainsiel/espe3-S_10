@@ -1,0 +1,5 @@
+{"ts":"2026-06-09T12:40:00Z","run_id":"RUN-PROYECTO-CINCO-20260609","cycle_id":"CYC-001","event":"run_started","phase":"intake","status":"complete","input_hash":"sha256:wo-proyecto-cinco-20260609"}
+{"ts":"2026-06-09T12:40:01Z","run_id":"RUN-PROYECTO-CINCO-20260609","cycle_id":"CYC-001","event":"gate_evaluated","gate_id":"schema","phase":"constitution","status":"complete"}
+{"ts":"2026-06-09T12:40:02Z","run_id":"RUN-PROYECTO-CINCO-20260609","cycle_id":"CYC-001","event":"agent_started","agent_id":"agent.spec","phase":"specify","status":"in_progress"}
+{"ts":"2026-06-09T12:40:03Z","run_id":"RUN-PROYECTO-CINCO-20260609","cycle_id":"CYC-001","event":"agent_finished","agent_id":"agent.spec","phase":"specify","status":"complete","output_hash":"sha256:spec-cinco-context-pack"}
+{"ts":"2026-06-09T12:40:04Z","run_id":"RUN-PROYECTO-CINCO-20260609","cycle_id":"CYC-001","event":"agent_started","agent_id":"agent.implementation","phase":"implement","status":"in_progress"}

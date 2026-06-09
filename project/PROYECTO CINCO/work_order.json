@@ -1,0 +1,81 @@
+{
+  "work_order_id": "WO-PROYECTO-CINCO-SDD-20260609",
+  "objective": "Implementar sistema web ERP pequeño (PROYECTO_CINCO) segun especificacion_cinco.md: 9 modulos funcionales, 40 pantallas, 130 endpoints REST, CRUD completo, tests, registro de consumo y artefactos de fabrica ARNES/SDD.",
+  "scope": {
+    "include": [
+      "auth_jwt_rbac",
+      "clientes_contactos_credito",
+      "productos_categorias_unidades",
+      "inventario_stocks_movimientos_ajustes_transferencias_conteos_bodegas",
+      "ventas_cotizaciones_despacho_pagos_anulaciones",
+      "devoluciones_aprobacion_recepcion_nota_credito",
+      "compras_proveedores_ordenes_recepcion_facturas",
+      "produccion_bom_ordenes_consumo_cierre",
+      "facturacion_facturas_notas_pagos",
+      "dashboard_reportes_alertas_correo",
+      "tests_pytest",
+      "artefactos_fabrica_arnes",
+      "billing_ledger_proyecto",
+      "traceability_matrix"
+    ],
+    "exclude": [
+      "deploy_real_sin_aprobacion",
+      "lectura_secretos",
+      "integracion_tributaria_real",
+      "envio_correo_smtp_real",
+      "postgresql_productivo_sin_aprobacion",
+      "contabilidad_completa",
+      "pos_fiscal_certificado"
+    ]
+  },
+  "inputs": [
+    {
+      "source_id": "SRC-SPEC-CINCO-20260609",
+      "type": "doc",
+      "path": "project/PROYECTO CINCO/especificacion_cinco.md",
+      "authorized": true,
+      "hash": "sha256:especificacion-cinco-65340-bytes"
+    },
+    {
+      "source_id": "SRC-ARNES-20260609",
+      "type": "doc",
+      "path": "arnes-2.md",
+      "authorized": true,
+      "hash": "sha256:arnes-23626-bytes"
+    },
+    {
+      "source_id": "SRC-ORQUESTADOR-20260609",
+      "type": "doc",
+      "path": "04_Orquestador_Ciclo_12_Pasos_Operabilidad-2.md",
+      "authorized": true,
+      "hash": "sha256:orquestador-21531-bytes"
+    }
+  ],
+  "constraints": {
+    "no_web": true,
+    "dry_run": false,
+    "max_retries": 2,
+    "risk": "high",
+    "max_cost_usd": 0,
+    "max_latency_ms": 300000
+  },
+  "expected_outputs": [
+    "backend_fastapi_completo",
+    "frontend_nextjs_completo",
+    "tests_pytest",
+    "billing_ledger_proyecto",
+    "traceability_matrix",
+    "validation_report",
+    "final_report"
+  ],
+  "approval_required_for": [
+    "write",
+    "deploy",
+    "merge",
+    "external_api",
+    "secrets",
+    "infra",
+    "cost_increase",
+    "data_access"
+  ]
+}

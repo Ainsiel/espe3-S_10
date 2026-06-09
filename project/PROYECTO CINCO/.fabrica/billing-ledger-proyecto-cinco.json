@@ -1,0 +1,108 @@
+{
+  "run_id": "RUN-PROYECTO-CINCO-20260609",
+  "currency": "USD",
+  "billing_mode": "local_deterministic_no_external_api",
+  "external_cost_usd": "0.000000",
+  "phases": [
+    {
+      "phase": "intake",
+      "agent_id": "agent.spec",
+      "model": "deterministic-local-no-llm",
+      "input_tokens": 320,
+      "output_tokens": 180,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0,
+      "tool_calls": 1,
+      "latency_ms": 0,
+      "estimated_cost": "0.000000",
+      "billing_is_real_api_usage": false,
+      "usage_source": "local_estimate"
+    },
+    {
+      "phase": "specify",
+      "agent_id": "agent.spec",
+      "model": "deterministic-local-no-llm",
+      "input_tokens": 1240,
+      "output_tokens": 520,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0,
+      "tool_calls": 2,
+      "latency_ms": 0,
+      "estimated_cost": "0.000000",
+      "billing_is_real_api_usage": false,
+      "usage_source": "local_estimate"
+    },
+    {
+      "phase": "clarify",
+      "agent_id": "agent.spec",
+      "model": "deterministic-local-no-llm",
+      "input_tokens": 1860,
+      "output_tokens": 440,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0,
+      "tool_calls": 1,
+      "latency_ms": 0,
+      "estimated_cost": "0.000000",
+      "billing_is_real_api_usage": false,
+      "usage_source": "local_estimate"
+    },
+    {
+      "phase": "context",
+      "agent_id": "agent.context_rag",
+      "model": "deterministic-local-no-llm",
+      "input_tokens": 3200,
+      "output_tokens": 980,
+      "cached_tokens": 1240,
+      "reasoning_tokens": 0,
+      "tool_calls": 0,
+      "latency_ms": 0,
+      "estimated_cost": "0.000000",
+      "billing_is_real_api_usage": false,
+      "usage_source": "local_estimate",
+      "cache_hit": true
+    },
+    {
+      "phase": "plan",
+      "agent_id": "agent.architecture_plan",
+      "model": "deterministic-local-no-llm",
+      "input_tokens": 4100,
+      "output_tokens": 1200,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0,
+      "tool_calls": 2,
+      "latency_ms": 0,
+      "estimated_cost": "0.000000",
+      "billing_is_real_api_usage": false,
+      "usage_source": "local_estimate"
+    },
+    {
+      "phase": "implement",
+      "agent_id": "agent.implementation",
+      "model": "deterministic-local-no-llm",
+      "input_tokens": 18500,
+      "output_tokens": 42000,
+      "cached_tokens": 3200,
+      "reasoning_tokens": 0,
+      "tool_calls": 85,
+      "latency_ms": 0,
+      "estimated_cost": "0.000000",
+      "billing_is_real_api_usage": false,
+      "usage_source": "local_estimate",
+      "note": "Generacion de backend FastAPI + frontend Next.js + tests"
+    }
+  ],
+  "totals": {
+    "input_tokens": 29220,
+    "output_tokens": 45320,
+    "cached_tokens": 4440,
+    "reasoning_tokens": 0,
+    "tool_calls": 91,
+    "estimated_cost": "0.000000",
+    "optimization_notes": [
+      "Cache hit en fase context reutiliza spec chunks ya indexados",
+      "Tokens de implement son estimados para archivos generados",
+      "Sin llamadas externas: costo real USD 0.000000",
+      "Chunks de spec leidos por modulo, no documento completo"
+    ]
+  }
+}
